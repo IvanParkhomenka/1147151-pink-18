@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Иван Пархоменко](https://up.htmlacademy.ru/adaptive/18/user/1147151).
-* Наставник: `Неизвестно`.
+* Наставник: [Иван Мулярчик](https://htmlacademy.ru/profile/ivanmuliarchyk).
 
 ---
 
