@@ -6,12 +6,13 @@
   </head>
   <body>
     <header class="page-header">
+      <h1 class="visually-hidden">Мобильное приложение Pink</h1>
       <nav class="main-nav">
         <a class="main-nav__logo">
-          <svg class="main-nav__logo-image"></svg>
+          <svg class="main-nav__logo-image" width="50" height="30"></svg>
         </a>
-        <button class="main-nav__toggler">
-          <svg></svg>
+        <button class="main-nav__toggle">
+          <svg class="main-nav__toggle-opened" width="30" height="30"></svg>
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -24,22 +25,58 @@
             <a href="#">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">HTML Academy</a>
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </nav>
       <section class="page-header__foto">
+        <h2 class="visually-hidden">Фото приложения на телефоне</h2>
         <img src="https://via.placeholder.com/270x270" alt="Фото приложения на телефоне" width="270" height="270">
       </section>
       <section class="download">
+        <h2 class="visually-hidden">Скачайте приложение на подходящей вам платформе</h2>
         <a class="download__link">Скачать приложение</a>
         <ul class="download__list">
           <li class="download__item download__item--apple"><a href="#" aria-label="Скачать через iTunes"></a></li>
-          <li class="download__item download__item--android"><a href="#" aria-label="Скачать через PlayMarket"></a></li>
+          <li class="download__item download__item--android"><a href="#" aria-label="Скачать через GooglePlay"></a></li>
           <li class="download__item download__item--microsoft"><a href="#" aria-label="Скачать через microsoft"></a></li>
         </ul>
         <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
     </header>
+    <main class="main-index">
+      <section class="advantages">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <section class="advantages_promo">
+          <p>Устали от серости мегаполиса?</p>
+          <p>Нам есть, что вам предложить!</p>
+        </section>
+        <div class="advantages__wrapper">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h3 class="advantages__item-title">Поднимает настроение</h3>
+              <p class="advantages__item-text">
+                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+              </p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__item-title">Меняет мир вокруг</h3>
+              <p class="advantages__item-text">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+              </p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__item-title">Заводит новых друзей</h3>
+              <p class="advantages__item-text">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="advantages__photo">
+          <img src="https://via.placeholder.com/150x300" width="150" height="300" alt="Всем привет :)">
+        </div>
+      </section>
+    </main>
   </body>
 </html>
