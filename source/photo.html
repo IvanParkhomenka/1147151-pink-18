@@ -17,7 +17,7 @@
           <li class="main-nav__item">
             <a href="index.html">Главная</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--active">
             <a>Фотографии</a>
           </li>
           <li class="main-nav__item">
@@ -170,6 +170,33 @@
             </div>
           </div>
         </article>
+        <section class="gallery__slogan">
+          <p class="gallegy__slogan-text">
+            Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+          </p>
+        </section>
+      </section>
+      <section class="upload">
+        <h2 class="visually-hidden">Загружайте свои фотографии!</h2>
+        <form class="upload__form" action="https://echo.htmlacademy.ru/">
+          <div class="upload__photo">
+            <img src="https://via.placeholder.com/200x300" width="200" height="300" alt="Ваше загруженное фото">
+          </div>
+          <div class="upload__filter">
+            <ul class="upload__filter-list">
+              <li class="upload__filter-item upload__filter-item--active"></li>
+              <li class="upload__filter-item upload__filter-item--disabled"></li>
+              <li class="upload__filter-item upload__filter-item--disabled"></li>
+            </ul>
+            <div class="upload__range">
+              <div class="upload__range-slider"></div>
+            </div>
+          </div>
+          <div class="upload__buttons">
+            <button class="upload__btn upload__btn--post" type="submit">Запостить</button>
+            <button class="upload__btn upload__btn--cancel" type="reset">Отмена</button>
+          </div>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
