@@ -1,3 +1,15 @@
-body {
-  background: green;
-}
+@import "global.scss";
+
+@import "advantages.scss";
+@import "contest-form.scss";
+@import "download.scss";
+@import "feedback.scss";
+@import "gallery.scss";
+@import "main-nav.scss";
+@import "map.scss";
+@import "page-footer.scss";
+@import "page-header.scss";
+@import "page-main.scss";
+@import "price.scss";
+@import "reviews.scss";
+@import "upload.scss";
