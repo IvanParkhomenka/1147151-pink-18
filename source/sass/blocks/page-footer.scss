@@ -72,6 +72,10 @@
   .page-footer {
     flex-direction: row;
     justify-content: space-between;
+
+    &--hide {
+      display: flex;
+    }
   }
 
   .page-footer__logo,
