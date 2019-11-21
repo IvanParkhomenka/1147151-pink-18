@@ -1,73 +1,84 @@
 .page-footer {
+  @include container();
+  padding-top: 35px;
+  padding-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--hide {
+    display: none;
+  }
+}
+
+.page-footer__logo,
+.page-footer__social {
+  margin-bottom: 40px;
+}
+
+.social__list {
+  @include list-reset();
+  display: flex;
+  align-items: center;
+}
+
+.social__item {
+  margin-right: 14px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: solid 3px #283645;
+  border-radius: 50%;
+
+  &--fb {
+    background: url("../img/icon-facebook.svg") no-repeat center;
+  }
+
+  &--tw {
+    background: url("../img/icon-twitter.svg") no-repeat center;
+  }
+
+  &--yt {
+    background: url("../img/icon-youtube.svg") no-repeat center;
+  }
+}
+
+.copyright {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.copyright__text {
+  margin-right: 15px;
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+.page-footer__logo-desktop {
   display: none;
 }
 
 @media #{$tablet} {
   .page-footer {
-    @include container();
-    padding-top: 35px;
-    padding-bottom: 35px;
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
   }
 
   .page-footer__logo,
   .page-footer__social,
   .page-footer__copyright {
     width: 30%;
-  }
-
-  .page-footer__logo-desktop {
-    display: none;
-  }
-
-  .social__list {
-    @include list-reset();
-    display: flex;
-    align-items: center;
-  }
-
-  .social__item {
-    margin-right: 14px;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  .social-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border: solid 3px #283645;
-    border-radius: 50%;
-
-    &--fb {
-      background: url("../img/icon-facebook.svg") no-repeat center;
-    }
-
-    &--tw {
-      background: url("../img/icon-twitter.svg") no-repeat center;
-    }
-
-    &--yt {
-      background: url("../img/icon-youtube.svg") no-repeat center;
-    }
-  }
-
-  .copyright {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  .copyright__text {
-    margin-right: 15px;
-    font-size: 14px;
-    line-height: 1.29;
+    margin-bottom: 0;
   }
 }
 
