@@ -9,9 +9,14 @@
 }
 
 .page-header__title {
+  @include container();
+  padding-top: 30px;
+  padding-bottom: 80px;
   font-size: 24px;
   font-weight: lighter;
+  line-height: normal;
   color: #ffffff;
+  text-align: center;
 }
 
 .page-header__photo {
@@ -27,10 +32,22 @@
   .page-header__photo {
     display: none;
   }
+
+  .page-header__title {
+    padding-top: 70px;
+    padding-bottom: 140px;
+    width: 400px;
+    font-size: 50px;
+  }
 }
 
 @media #{$desktop} {
   .page-header {
     background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  .page-header__title {
+    padding-top: 60px;
+    padding-bottom: 110px;
   }
 }
