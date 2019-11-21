@@ -4,8 +4,8 @@
 
 @media #{$tablet} {
   .research {
-    display: flex;
     @include container();
+    display: flex;
     padding-top: 55px;
     padding-bottom: 50px;
 
@@ -57,7 +57,6 @@
 
 @media #{$desktop} {
   .research {
-
     &::before {
       width: 298px;
       height: 345px;
