@@ -17,6 +17,11 @@
   line-height: normal;
   color: #ffffff;
   text-align: center;
+
+  &--form {
+    padding-top: 25px;
+    padding-bottom: 55px;
+  }
 }
 
 .page-header__photo {
@@ -36,8 +41,11 @@
   .page-header__title {
     padding-top: 70px;
     padding-bottom: 140px;
-    width: 400px;
     font-size: 50px;
+
+    &--form {
+      padding-bottom: 75px;
+    }
   }
 }
 
@@ -49,5 +57,10 @@
   .page-header__title {
     padding-top: 60px;
     padding-bottom: 110px;
+
+    &--form {
+      padding-top: 65px;
+      padding-bottom: 100px;
+    }
   }
 }
