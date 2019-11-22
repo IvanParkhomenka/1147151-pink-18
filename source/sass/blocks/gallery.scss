@@ -3,11 +3,66 @@
 }
 
 .gallery__title {
+  @include container();
+  padding: 50px 0;
   line-height: 2.14;
+  text-align: center;
+}
+
+.gallery__title-text {
+  display: block;
+}
+
+.gallery__post-daily,
+.gallery__post {
+  margin-bottom: 20px;
+}
+
+.gallery__photo-daily {
+  position: relative;
+  margin-bottom: -6px;
+
+  &::before {
+    content: "Панорама дня";
+    position: absolute;
+    top: 0;
+    right: 6%;
+    width: 140px;
+    height: 36px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    color: #ffffff;
+    background-color: #d22856;
+  }
+}
+
+.gallery__post-wrapper {
+  @include container();
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery__photo {
+  margin-bottom: -6px;
 }
 
 .gallery__post-desc {
+  padding: 12px 21px;
+  display: flex;
+  flex-direction: column;
   background-color: #f2f2f2;
+
+  &--daily {
+    @include container();
+  }
+}
+
+.gallery__post-title {
+  margin-bottom: 5px;
 }
 
 .gallery__post-author {
@@ -21,16 +76,87 @@
   text-transform: uppercase;
 }
 
+.gallery__post-text {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.gallery__post-likes {
+  display: flex;
+  align-items: center;
+}
+
 .gallery__post-like {
-  display: block;
+  margin-right: 16px;
+  display: inline-block;
   width: 14px;
   height: 14px;
   background: url("../img/icon-heart.svg") no-repeat center;
 }
 
 .gallery__post-likes-count {
+  display: inline-block;
   font-size: 12px;
   line-height: 2;
   color: #d22856;
   text-transform: uppercase;
+}
+
+.gallery__slogan {
+  padding: 45px 0;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.gallery__slogan-text {
+  @include container();
+  padding: 0 10px;
+  font-size: 14px;
+  line-height: 2.14;
+}
+
+@media #{$tablet} {
+  .gallery__title {
+    padding-top: 90px;
+    padding-bottom: 70px;
+    width: 450px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  .gallery__title-text {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .gallery__post-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .gallery__post {
+    width: 300px;
+  }
+
+  .gallery__post-likes {
+    margin-top: auto;
+    justify-content: space-between;
+  }
+
+  .gallery__post-like {
+    order: 1;
+  }
+
+  .gallery__slogan-text {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+@media #{$desktop} {
+  .gallery__title {
+    padding-bottom: 80px;
+    width: 580px;
+  }
 }

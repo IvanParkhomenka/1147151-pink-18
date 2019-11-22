@@ -1,9 +1,66 @@
 .page-header {
-  background: #1d2631 url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  display: flex;
+  flex-direction: column;
+  background-color: #1d2631;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .page-header__title {
+  @include container();
+  padding-top: 30px;
+  padding-bottom: 80px;
   font-size: 24px;
   font-weight: lighter;
+  line-height: normal;
   color: #ffffff;
+  text-align: center;
+
+  &--form {
+    padding-top: 25px;
+    padding-bottom: 55px;
+  }
+}
+
+.page-header__photo {
+  padding-top: 110px;
+  margin-bottom: -6px;
+}
+
+@media #{$tablet} {
+  .page-header {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  .page-header__photo {
+    display: none;
+  }
+
+  .page-header__title {
+    padding-top: 70px;
+    padding-bottom: 140px;
+    font-size: 50px;
+
+    &--form {
+      padding-bottom: 75px;
+    }
+  }
+}
+
+@media #{$desktop} {
+  .page-header {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  .page-header__title {
+    padding-top: 60px;
+    padding-bottom: 110px;
+
+    &--form {
+      padding-top: 65px;
+      padding-bottom: 100px;
+    }
+  }
 }

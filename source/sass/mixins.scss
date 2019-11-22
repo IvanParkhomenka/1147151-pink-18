@@ -1,0 +1,15 @@
+@mixin container() {
+  width: 87.5%;
+  margin: 0 auto;
+
+  @media #{$tablet} {
+    width: 94%;
+    max-width: 940px;
+  }
+}
+
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
