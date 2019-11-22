@@ -1,0 +1,21 @@
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: solid 3px #283645;
+  border-radius: 50%;
+
+  &--fb {
+    background: url("../img/icon-facebook.svg") no-repeat center;
+  }
+
+  &--tw {
+    background: url("../img/icon-twitter.svg") no-repeat center;
+  }
+
+  &--yt {
+    background: url("../img/icon-youtube.svg") no-repeat center;
+  }
+}
