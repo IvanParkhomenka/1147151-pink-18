@@ -5,14 +5,14 @@
   &--opened {
     background-color: #263341;
   }
-  /* Пока нет js
+
   &--closed {
     background-color: rgba(0, 0, 0, 0.3);
-  } */
+  }
 }
 
 .main-nav__logo {
-  padding: 20px 20px 25px;
+  padding: 26px 20px 20px;
 }
 
 .main-nav__logo-svg {
@@ -27,14 +27,22 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 21px;
-  right: 19px;
+  top: 24px;
+  right: 14px;
   background-color: transparent;
   border: none;
 }
 
-.main-nav__toggle-closed {
-  display: none; /*Пока нет js*/
+.main-nav--opened .main-nav__toggle-closed {
+  display: none;
+}
+
+.main-nav--closed .main-nav__toggle-opened {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
 }
 
 .main-nav__list {
@@ -63,6 +71,12 @@
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media #{$notdesktop} {
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
 }
 
 @media #{$tablet} {
