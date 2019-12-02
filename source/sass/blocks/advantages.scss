@@ -4,7 +4,7 @@
 }
 
 .advantages__promo {
-  padding-top: 45px;
+  padding-top: 40px;
   padding-bottom: 30px;
   background-color: #ffffff;
 }
@@ -12,12 +12,17 @@
 .advantages__slogan {
   @include container();
   font-size: 24px;
-  line-height: normal;
+  line-height: 1.25;
   font-weight: lighter;
 
   &--wide {
     margin-bottom: 25px;
   }
+}
+
+.advantages__inner {
+  background: #f2f2f2 url("../img/bg-triangle-white.svg") no-repeat;
+  background-size: contain;
 }
 
 .advantages__wrapper {
@@ -28,14 +33,15 @@
 
 .advantages__list {
   @include list-reset();
-  padding-top: 50px;
+  padding-top: 84px;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
 }
 
 .advantages__item {
-  padding: 0 10px;
-  margin-bottom: 30px;
+  padding: 0 9px;
+  margin-bottom: 35px;
 }
 
 .advantages__item-photo {
@@ -44,7 +50,7 @@
 
 .advantages__item-title {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   font-size: 18px;
   line-height: 1.33;
   font-weight: bold;
@@ -53,9 +59,19 @@
 
 .advantages__item-text {
   margin: 0;
+  letter-spacing: 0.4px;
+}
+
+.advantages__photo {
+  height: 277px;
+  overflow: hidden;
 }
 
 @media #{$tablet} {
+  .advantages__promo {
+    padding-top: 48px;
+  }
+
   .advantages__slogan {
     font-size: 40px;
 
@@ -84,8 +100,14 @@
 }
 
 @media #{$desktop} {
+  .advantages__promo {
+    padding-top: 68px;
+    padding-bottom: 77px;
+  }
+
   .advantages__slogan {
     font-size: 50px;
+    line-height: 1.2;
 
     &--narrow {
       padding: 0 140px;
@@ -98,6 +120,7 @@
 
   .advantages__list {
     width: 100%;
+    padding-top: 0;
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
