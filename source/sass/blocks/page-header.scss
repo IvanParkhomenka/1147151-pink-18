@@ -39,9 +39,10 @@
   }
 
   .page-header__title {
-    padding-top: 70px;
-    padding-bottom: 140px;
+    padding-top: 67px;
+    padding-bottom: 138px;
     font-size: 50px;
+    line-height: 1.25;
 
     &--form {
       padding-bottom: 75px;
@@ -56,7 +57,11 @@
 
   .page-header__title {
     padding-top: 60px;
-    padding-bottom: 110px;
+    padding-bottom: 100px;
+
+    &--photo {
+      width: 360px;
+    }
 
     &--form {
       padding-top: 65px;
