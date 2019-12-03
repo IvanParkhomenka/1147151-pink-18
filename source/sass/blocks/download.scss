@@ -8,8 +8,8 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 28px;
-  padding-bottom: 35px;
+  padding-top: 27px;
+  padding-bottom: 31px;
 }
 
 .download__promo {
@@ -20,7 +20,7 @@
   display: block;
   width: 281px;
   margin-bottom: 32px;
-  padding: 18px 0;
+  padding: 17px 0;
   font-size: 18px;
   font-weight: bold;
   line-height: 1;
@@ -30,16 +30,26 @@
   border: 3px solid #ffffff;
   border-radius: 45px;
   background-color: transparent;
+
+  &:hover {
+    color: #d22856;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+    background-color: #ffffff;
+  }
 }
 
 .download__list {
   @include list-reset();
   display: flex;
-  width: 210px;
+  width: 206px;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 28px;
+  margin-bottom: 14px;
 }
 
 .download__item {
@@ -59,16 +69,18 @@
   .download {
     @include container();
     margin-top: 74px;
+    padding-bottom: 79px;
     background: url("../img/iphone-hand-tablet@1x.png") no-repeat center top;
   }
 
   .download__wrapper {
     width: 300px;
     margin-left: 0;
+    padding-top: 18px;
   }
 
   .download__promo {
-    margin-bottom: 34px;
+    margin-bottom: 30px;
     display: block;
     width: 186px;
     color: #ffffff;
@@ -78,34 +90,40 @@
   .download__promo-text {
     margin: 0;
     font-size: 40px;
-    line-height: normal;
+    line-height: 1.2;
     font-weight: lighter;
   }
 
+  .download__list {
+    margin-bottom: 29px;
+  }
+
   .download__link {
-    margin-bottom: 41px;
+    width: 300px;
+    margin-bottom: 46px;
+    padding: 16px 0;
   }
 
   .download__desc {
     font-size: 18px;
-    line-height: 1.33;
+    line-height: 1.35;
   }
 }
 
 @media #{$desktop} {
   .download {
-    padding-bottom: 52px;
+    padding-bottom: 88px;
     margin-top: 99px;
-    background: url("../img/iphone-hand-desktop@1x.png") no-repeat 10% top;
+    background: url("../img/iphone-hand-desktop@1x.png") no-repeat -10% top;
   }
 
   .download__wrapper {
-    padding-top: 20px;
+    padding-top: 10px;
   }
 
   .download__promo {
     width: 231px;
-    margin-bottom: 46px;
+    margin-bottom: 47px;
   }
 
   .download__promo-text {
@@ -115,10 +133,10 @@
   .download__link {
     font-size: 21px;
     line-height: 0.86;
-    margin-bottom: 58px;
+    margin-bottom: 71px;
   }
 
   .download__list {
-    margin-bottom: 56px;
+    margin-bottom: 48px;
   }
 }
