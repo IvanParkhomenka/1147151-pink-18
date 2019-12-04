@@ -120,13 +120,13 @@
   }
 }
 
-.contest-form__checkbox:hover +.contest-form__checkbox-label {
+.contest-form__checkbox:hover + .contest-form__checkbox-label {
   &::before {
     border: 2px solid #283645;
   }
 }
 
-.contest-form__checkbox:active +.contest-form__checkbox-label {
+.contest-form__checkbox:active + .contest-form__checkbox-label {
   &::before {
     border: 2px solid #d22856;
   }
@@ -285,7 +285,7 @@
     }
   }
 
-  .contest-form__input-wrapper{
+  .contest-form__input-wrapper {
     position: relative;
 
     &::before {
