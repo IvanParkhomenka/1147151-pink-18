@@ -1,3 +1,203 @@
 .price {
-  background-color: transparent;
+  padding: 40px 0;
+  background: #f2f2f2 url("../img/bg-triangle-white.svg") no-repeat;
+  background-size: contain;
+}
+
+.price__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.price__table {
+  margin-bottom: 40px;
+  width: 830px;
+  text-transform: uppercase;
+  overflow: hidden;
+
+  &--mobile {
+    transform: translateX(-30%);
+  }
+
+  td {
+    padding: 15px 25px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #e5e5e5;
+    border-right: 2px solid #e5e5e5;
+  }
+
+  th {
+    padding: 17px 25px;
+  }
+}
+
+.price__tariff {
+  text-align: center;
+  background-color: #283645;
+  border-right: 2px solid #283645;
+
+  &--hide {
+    display: none;
+    border: none;
+  }
+
+  &--standart {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 74px;
+      height: 73px;
+      background-image: url("../img/bg-hit.svg");
+    }
+
+    &::after {
+      content: "Хит";
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      line-height: 26px;
+      color: #ffffff;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.price__tariff-name {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.67;
+  color: #ffffff;
+}
+
+.price__tariff-value {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.25;
+  color: #ffffff;
+}
+
+.price__item {
+  display: block;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  text-align: left;
+
+  &--hide {
+    display: none;
+  }
+}
+
+.price__checked {
+  background-color: #ffffff;
+
+  &--yes {
+    background: url("../img/icon-yes.svg") no-repeat 90% center;
+    background-size: 31px 21px;
+  }
+
+  &--no {
+    background: url("../img/icon-no.svg") no-repeat 90% center;
+    background-size: 27px 26px;
+  }
+}
+
+.price__table-control {
+  align-self: center;
+}
+
+@media #{$tablet} {
+  .price__wrapper {
+    @include container();
+  }
+
+  .price__table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 620px;
+
+    &--mobile {
+      transform: translateX(0);
+    }
+
+    td, th {
+      padding: 12px 18px 8px;
+    }
+  }
+
+  .price__tariff {
+    &--hide {
+      display: block;
+    }
+
+    &--standart {
+      &::before {
+        width: 61px;
+        height: 61px;
+        background-image: url(../img/bg-hit-tablet.svg);
+      }
+
+      &::after {
+        top: 6px;
+        left: 6px;
+      }
+    }
+  }
+
+  .price__tariff-name {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .price__tariff-value {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .price__item {
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: none;
+
+    &--hide {
+      display: block;
+    }
+
+    &--mobile {
+      display: none;
+    }
+  }
+
+  .price__checked {
+    background-position: center;
+  }
+
+  .price__table-control {
+    display: none;
+  }
+}
+
+@media #{$desktop} {
+  .price__table {
+    width: 100%;
+  }
+
+  .price__tariff-name {
+    font-size: 18px;
+  }
+
+  .price__tariff-value {
+    font-size: 24px;
+  }
+
+  .price__item {
+    font-size: 18px;
+  }
 }
