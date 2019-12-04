@@ -127,7 +127,8 @@
       transform: translateX(0);
     }
 
-    td, th {
+    td,
+    th {
       padding: 12px 18px 8px;
     }
   }
@@ -141,7 +142,7 @@
       &::before {
         width: 61px;
         height: 61px;
-        background-image: url(../img/bg-hit-tablet.svg);
+        background-image: url("../img/bg-hit-tablet.svg");
       }
 
       &::after {
