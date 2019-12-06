@@ -1,5 +1,10 @@
 .gallery {
   background-color: #ffffff;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .gallery__title {
@@ -132,6 +137,14 @@
     vertical-align: top;
   }
 
+  .gallery__photo-daily {
+    height: 509px;
+  }
+
+  .gallery__photo {
+    height: 300px;
+  }
+
   .gallery__post-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
@@ -161,5 +174,9 @@
   .gallery__title {
     padding-bottom: 80px;
     width: 580px;
+  }
+
+  .gallery__photo {
+    height: 400px;
   }
 }
