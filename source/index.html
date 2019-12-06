@@ -171,7 +171,10 @@
         <div class="reviews__wrapper slider">
           <ul class="reviews__list slider__list">
             <li class="reviews__item slider__item">
-              <cite class="reviews__author-name">Николай Петров</cite>
+              <div class="reviews__author">
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <span class="reviews__author-info">25 лет, водитель трамвая</span>
+              </div>
               <blockquote class="reviews__text">
                 "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
               </blockquote>
@@ -190,41 +193,59 @@
             <button class="slider__toggle" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
           </div>
+          <div class="reviews__arrows">
+            <button type="button" class="reviews__arrow reviews__arrow--previous"></button>
+            <button type="button" class="reviews__arrow reviews__arrow--next"></button>
+          </div>
         </div>
       </section>
       <section class="price">
         <h2 class="visually-hidden">Тарифы и цены на них</h2>
         <div class="price__wrapper slider">
-          <!-- Будет в демонстрациях
-          <table class="price__table">
-            <tr class="price__header">
-              <th class="price__tariff">
-                <span class="price__tariff-name">Стандарт</span>
-                <span class="price__tariff-value">3,99 usd</span>
-              </th>
-            </tr>
-            <tr class="price__row">
-              <td class="price__item">
-                <span class="price__item-text">Розовый фильтр</span>
-              </td>
-            </tr>
-            <tr class="price__row">
-              <td class="price__item">
-                <span class="price__item-text">Смайлики</span>
-              </td>
-            </tr>
-            <tr class="price__row">
-              <td class="price__item">
-                <span class="price__item-text">Комментарии</span>
-              </td>
-            </tr>
+          <table class="price__table price__table--mobile">
+            <thead>
+              <tr class="price__header">
+                <th class="price__tariff--hide"></th>
+                <th class="price__tariff">
+                  <span class="price__tariff-name">База</span>
+                  <span class="price__tariff-value">1.99 usd</span>
+                </th>
+                <th class="price__tariff price__tariff--standart">
+                  <span class="price__tariff-name">Стандарт</span>
+                  <span class="price__tariff-value">3.99 usd</span>
+                </th>
+                <th class="price__tariff">
+                  <span class="price__tariff-name">Анлим</span>
+                  <span class="price__tariff-value">9.99 usd</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="price__row">
+                <td class="price__item price__item--hide">Розовый фильтр</td>
+                <td class="price__checked price__checked--yes"><span class="price__item price__item--mobile">Розовый фильтр</span></td>
+                <td class="price__checked price__checked--yes"><span class="price__item price__item--mobile">Розовый фильтр</span></td>
+                <td class="price__checked price__checked--yes"><span class="price__item price__item--mobile">Розовый фильтр</span></td>
+              </tr>
+              <tr class="price__row">
+                <td class="price__item price__item--hide">Смайлики</td>
+                <td class="price__checked price__checked--no"><span class="price__item price__item--mobile">Смайлики</span></td>
+                <td class="price__checked price__checked--yes"><span class="price__item price__item--mobile">Смайлики</span></td>
+                <td class="price__checked price__checked--yes"><span class="price__item price__item--mobile">Смайлики</span></td>
+              </tr>
+              <tr class="price__row">
+                <td class="price__item price__item--hide">Комментарии</td>
+                <td class="price__checked price__checked--no"><span class="price__item price__item--mobile">Комментарии</span></td>
+                <td class="price__checked price__checked--no"><span class="price__item price__item--mobile">Комментарии</span></td>
+                <td class="price__checked price__checked--yes"><span class="price__item price__item--mobile">Комментарии</span></td>
+              </tr>
+            </tbody>
           </table>
           <div class="price__table-control slider__toggles">
             <button class="slider__toggle" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
           </div>
-          -->
         </div>
       </section>
       <section class="feedback">
@@ -249,6 +270,7 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Наше расположение на карте</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4753.498276360864!2d30.318083064155303!3d59.93878213770896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1575544461015!5m2!1sru!2sby" frameborder="0" style="border:0;" allowfullscreen></iframe>
       </section>
     </main>
     <footer class="page-footer page-footer--hide">
