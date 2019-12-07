@@ -70,7 +70,15 @@
     @include container();
     margin-top: 74px;
     padding-bottom: 79px;
-    background: url("../img/iphone-hand-tablet@1x.png") no-repeat center top;
+    background-color: transparent;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto 550px;
+
+    @media #{$retina} {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+    }
   }
 
   .download__wrapper {
@@ -115,6 +123,11 @@
     padding-bottom: 88px;
     margin-top: 99px;
     background: url("../img/iphone-hand-desktop@1x.png") no-repeat -10% top;
+    background-size: 1050px 645px;
+
+    @media #{$retina} {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+    }
   }
 
   .download__wrapper {

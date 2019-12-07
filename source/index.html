@@ -67,7 +67,7 @@
       </nav>
       <section class="page-header__photo">
         <h2 class="visually-hidden">Фото приложения на телефоне</h2>
-        <img src="img/iphone-hand-mobile@1x.png" alt="Фото приложения на телефоне" width="258" height="286">
+        <img src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Фото приложения на телефоне" width="258" height="286">
       </section>
       <section class="download">
         <h2 class="visually-hidden">Скачайте приложение на подходящей вам платформе</h2>
@@ -123,7 +123,7 @@
             <ul class="advantages__list">
               <li class="advantages__item">
                 <div class="advantages__item-photo">
-                  <img src="img/iphone-screen-1-desktop@1x.png" width="292" height="302" alt="Поднимает настроение">
+                  <img src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" width="292" height="302" alt="Поднимает настроение">
                 </div>
                 <h3 class="advantages__item-title">Поднимает настроение</h3>
                 <p class="advantages__item-text">
@@ -132,7 +132,7 @@
               </li>
               <li class="advantages__item">
                 <div class="advantages__item-photo">
-                  <img src="img/iphone-screen-2-desktop@1x.png" width="292" height="302" alt="Меняет мир вокруг">
+                  <img src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" width="292" height="302" alt="Меняет мир вокруг">
                 </div>
                 <h3 class="advantages__item-title">Меняет мир вокруг</h3>
                 <p class="advantages__item-text">
@@ -141,7 +141,7 @@
               </li>
               <li class="advantages__item">
                 <div class="advantages__item-photo">
-                  <img src="img/iphone-screen-3-desktop@1x.png" width="292" height="302" alt="Заводит новых друзей">
+                  <img src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" width="292" height="302" alt="Заводит новых друзей">
                 </div>
                 <h3 class="advantages__item-title">Заводит новых друзей</h3>
                 <p class="advantages__item-text">
@@ -150,7 +150,10 @@
               </li>
             </ul>
             <div class="advantages__photo">
-              <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всем привет :)">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png, img/iphone-screen-3-tablet@2x.png 2x">
+                <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Всем привет :)">
+              </picture>
             </div>
           </div>
         </div>

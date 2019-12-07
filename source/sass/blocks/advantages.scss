@@ -95,6 +95,9 @@
   }
 
   .advantages__photo {
+    height: 480px;
+    width: 270px;
+    flex-grow: 1;
     order: -1;
   }
 }
