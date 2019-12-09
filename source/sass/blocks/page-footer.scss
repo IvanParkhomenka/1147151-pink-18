@@ -16,12 +16,32 @@
   margin-bottom: 40px;
 }
 
+.page-footer__logo {
+  a {
+    color: #283645;
+
+    &:hover {
+      color: #d22856;
+    }
+
+    &:active {
+      color: #283645;
+      opacity: 0.3;
+    }
+  }
+}
+
+.page-footer__logo-svg-letter {
+  fill: currentColor;
+}
+
 .page-footer__logo-desktop {
   display: none;
 }
 
 @media #{$tablet} {
   .page-footer {
+    padding-top: 40px;
     flex-direction: row;
     justify-content: space-between;
 
@@ -33,15 +53,16 @@
   .page-footer__logo,
   .page-footer__social,
   .page-footer__copyright {
-    width: 30%;
+    width: 29%;
     margin-bottom: 0;
   }
 }
 
 @media #{$desktop} {
   .page-footer {
-    padding-top: 70px;
+    padding-top: 74px;
     padding-bottom: 70px;
+    align-items: stretch;
   }
 
   .page-footer__logo-svg {

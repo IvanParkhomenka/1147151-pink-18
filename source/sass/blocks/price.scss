@@ -12,17 +12,19 @@
 }
 
 .price__table {
-  margin-bottom: 40px;
+  padding-top: 46px;
+  margin-bottom: 30px;
   width: 830px;
   text-transform: uppercase;
   overflow: hidden;
 
   &--mobile {
-    transform: translateX(-30%);
+    transform: translateX(-30.8%);
   }
 
   td {
-    padding: 15px 25px;
+    padding: 13px 25px 15px 22px;
+    line-height: 30px;
     background-color: #ffffff;
     border-bottom: 2px solid #e5e5e5;
     border-right: 2px solid #e5e5e5;
@@ -30,6 +32,7 @@
 
   th {
     padding: 17px 25px;
+    line-height: 30px;
   }
 }
 
@@ -99,12 +102,12 @@
   background-color: #ffffff;
 
   &--yes {
-    background: url("../img/icon-yes.svg") no-repeat 90% center;
+    background: url("../img/icon-yes.svg") no-repeat 94% center;
     background-size: 31px 21px;
   }
 
   &--no {
-    background: url("../img/icon-no.svg") no-repeat 90% center;
+    background: url("../img/icon-no.svg") no-repeat 94% center;
     background-size: 27px 26px;
   }
 }
@@ -114,6 +117,10 @@
 }
 
 @media #{$tablet} {
+  .price {
+    padding-bottom: 36px;
+  }
+
   .price__wrapper {
     @include container();
   }
@@ -129,11 +136,13 @@
 
     td,
     th {
-      padding: 12px 18px 8px;
+      padding: 12px 18px 5px 19px;
     }
   }
 
   .price__tariff {
+    width: 157px;
+
     &--hide {
       display: block;
     }
@@ -162,6 +171,11 @@
     line-height: 30px;
   }
 
+  td.price__item {
+    width: 157px;
+    padding: 4px 10px 9px 15px;
+  }
+
   .price__item {
     font-size: 14px;
     line-height: 30px;
@@ -186,8 +200,30 @@
 }
 
 @media #{$desktop} {
+  .price {
+    padding-bottom: 62px;
+  }
+
+  .price__wrapper {
+    padding-top: 56px;
+  }
+
   .price__table {
+    padding-top: 56px;
     width: 100%;
+
+    th {
+      padding-top: 16px;
+      padding-bottom: 19px;
+    }
+
+    td {
+      padding: 10px 17px 17px 20px;
+    }
+  }
+
+  .price__tariff {
+    width: 236px;
   }
 
   .price__tariff-name {
@@ -198,7 +234,8 @@
     font-size: 24px;
   }
 
-  .price__item {
+  td.price__item {
+    width: 236px;
     font-size: 18px;
   }
 }
