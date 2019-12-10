@@ -97,6 +97,7 @@
 .gallery__post-like {
   margin-right: 16px;
   display: inline-block;
+  vertical-align: top;
   width: 14px;
   height: 14px;
   background: url("../img/icon-heart.svg") no-repeat center;
@@ -104,6 +105,7 @@
 
 .gallery__post-likes-count {
   display: inline-block;
+  vertical-align: top;
   font-size: 12px;
   line-height: 2;
   color: #d22856;
@@ -111,7 +113,8 @@
 }
 
 .gallery__slogan {
-  padding: 45px 0;
+  padding-top: 20px;
+  padding-bottom: 42px;
   text-align: center;
   background-color: #ffffff;
 }
@@ -120,7 +123,8 @@
   @include container();
   padding: 0 10px;
   font-size: 14px;
-  line-height: 2.14;
+  line-height: 30px;
+  letter-spacing: 0.3px;
 }
 
 @media #{$tablet} {
@@ -137,12 +141,22 @@
     vertical-align: top;
   }
 
+  .gallery__post-daily {
+    margin-bottom: 50px;
+  }
+
   .gallery__photo-daily {
     height: 509px;
+
+    &::before {
+      right: 3%;
+      top: 11%;
+    }
   }
 
   .gallery__photo {
     height: 300px;
+    margin-bottom: 0;
   }
 
   .gallery__post-wrapper {
@@ -155,13 +169,40 @@
     width: 300px;
   }
 
+  .gallery__post-desc {
+    min-height: 155px;
+    padding: 24px 31px 22px 27px;
+
+    &--daily {
+      padding: 29px 28px 15px;
+      min-height: 120px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .gallery__post-text {
+        order: 1;
+      }
+
+      .gallery__post-like {
+        margin-left: 17px;
+      }
+    }
+  }
+
   .gallery__post-likes {
     margin-top: auto;
     justify-content: space-between;
   }
 
   .gallery__post-like {
+    margin-right: 0;
     order: 1;
+  }
+
+  .gallery__slogan {
+    padding-top: 45px;
+    padding-bottom: 69px;
   }
 
   .gallery__slogan-text {
@@ -172,11 +213,44 @@
 
 @media #{$desktop} {
   .gallery__title {
-    padding-bottom: 80px;
+    padding-bottom: 87px;
     width: 580px;
+  }
+
+  .gallery__photo-daily {
+    height: 506px;
+
+    &::before {
+      top: 10.5%;
+      right: 11%;
+    }
+  }
+
+  .gallery__post {
+    margin-bottom: 54px;
   }
 
   .gallery__photo {
     height: 400px;
+  }
+
+  .gallery__post-desc {
+    &--daily {
+      min-height: auto;
+      padding: 30px 30px 13px 28px;
+    }
+  }
+
+  .gallery__post-title {
+    margin-bottom: 1px;
+  }
+
+  .gallery__post-text {
+    letter-spacing: 0.28px;
+  }
+
+  .gallery__slogan {
+    padding-top: 5px;
+    padding-bottom: 66px;
   }
 }
