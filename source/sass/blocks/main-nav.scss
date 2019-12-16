@@ -17,6 +17,17 @@
 }
 
 .main-nav__logo-svg {
+  fill: #ffffff;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
+
   &--desktop {
     display: none;
   }
@@ -41,10 +52,10 @@
   &:active {
     opacity: 0.3;
   }
-}
 
-.main-nav__toggle path {
-  fill: currentColor;
+  svg {
+    fill: currentColor;
+  }
 }
 
 .main-nav--opened .main-nav__toggle-closed {
