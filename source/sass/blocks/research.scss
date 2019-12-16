@@ -10,12 +10,15 @@
   .research__inner {
     @include container();
     display: flex;
-    padding-top: 55px;
+    justify-content: flex-end;
+    padding-top: 56px;
     padding-bottom: 50px;
 
     &::before {
       content: "24";
-      width: 238px;
+      display: block;
+      margin-right: auto;
+      width: 240px;
       height: 276px;
       font-size: 96px;
       line-height: 295px;
@@ -31,10 +34,8 @@
   }
 
   .research__wrapper {
-    margin-left: auto;
-    padding-right: 10px;
-    padding-top: 25px;
-    width: 300px;
+    padding-top: 38px;
+    width: 310px;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -47,15 +48,23 @@
     font-weight: bold;
     line-height: 1.2;
     color: #000000;
+
+    span {
+      display: block;
+    }
   }
 
   .research__text {
     margin: 0;
     margin-bottom: 10px;
+    letter-spacing: 0.35px;
+    line-height: 24px;
   }
 
   .research__link {
+    display: block;
     color: #d22856;
+    letter-spacing: 0.2px;
   }
 }
 
@@ -65,6 +74,9 @@
   }
 
   .research__inner {
+    padding-top: 30px;
+    padding-bottom: 67px;
+
     &::before {
       width: 298px;
       height: 345px;
@@ -79,18 +91,25 @@
 
   .research__wrapper {
     width: 525px;
-    padding-top: 45px;
+    margin-top: 55px;
+    margin-right: 49px;
   }
 
   .research__title {
-    margin-bottom: 20px;
+    margin-bottom: 26px;
     line-height: 1;
+
+    span {
+      display: inline-block;
+      vertical-align: top;
+    }
   }
 
   .research__text {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 18px;
-    line-height: 1.67;
+    line-height: 30px;
+    letter-spacing: 0.35px;
   }
 
   .research__link {

@@ -11,3 +11,10 @@
     margin-right: 0;
   }
 }
+
+@media #{$desktop} {
+  .social {
+    display: flex;
+    justify-content: center;
+  }
+}

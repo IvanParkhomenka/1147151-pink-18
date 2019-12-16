@@ -10,6 +10,32 @@
   line-height: 1.29;
 }
 
+.copyright__link {
+  display: block;
+  line-height: 14px;
+  color: #d22856;
+
+  &:hover {
+    color: #283645;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__link-svg {
+  path {
+    fill: currentColor;
+  }
+}
+
+@media #{$tablet} {
+  .copyright__text {
+    letter-spacing: 0.2px;
+  }
+}
+
 @media #{$desktop} {
   .copyright__text {
     font-size: 18px;
