@@ -20,6 +20,10 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+
+  &:nth-child(n+2) {
+    display: none;
+  }
 }
 
 .reviews__author {
@@ -88,12 +92,6 @@
 
   .reviews__wrapper {
     position: relative;
-  }
-
-  .reviews__item {
-    &:nth-child(n+2) {
-      display: none;
-    }
   }
 
   .reviews__author-name {
