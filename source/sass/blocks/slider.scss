@@ -1,0 +1,41 @@
+.slider__toggles {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider__radio {
+  display: none;
+}
+
+.slider__btn {
+  width: 12px;
+  height: 12px;
+  margin: 0 7px;
+}
+
+.slider__toggle {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  width: 6px;
+  height: 6px;
+  background-color: #283645;
+  border-radius: 50%;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.slider__radio:checked + .slider__toggle {
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  border: 3px solid #283645;
+  opacity: 1;
+}
