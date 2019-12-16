@@ -32,18 +32,23 @@
   color: #283645;
 
   &:hover {
-    .upload__color {
+    .upload__icon-svg {
       opacity: 0.5;
+
+      &--active {
+        opacity: 1;
+      }
     }
   }
 }
 
-.upload__color {
+.upload__icon-svg {
   fill: currentColor;
   opacity: 0.3;
 
   &--active {
     fill: #d22856;
+    opacity: 1;
   }
 }
 
@@ -183,13 +188,13 @@
     color: #d22856;
 
     &:hover {
-      .upload__color {
+      .upload__icon-svg {
         opacity: 1;
       }
     }
   }
 
-  .upload__color {
+  .upload__icon-svg {
     opacity: 1;
   }
 
