@@ -5,6 +5,7 @@
 }
 
 .price__wrapper {
+  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -12,7 +13,7 @@
 }
 
 .price__table {
-  padding-top: 46px;
+  padding-top: 48px;
   margin-bottom: 30px;
   width: 830px;
   text-transform: uppercase;
@@ -113,12 +114,12 @@
 }
 
 .price__table-control {
-  align-self: center;
+  display: flex;
 }
 
 @media #{$tablet} {
   .price {
-    padding-bottom: 36px;
+    padding-bottom: 24px;
   }
 
   .price__wrapper {
@@ -136,7 +137,7 @@
 
     td,
     th {
-      padding: 12px 18px 5px 19px;
+      padding: 12px 18px 7px 19px;
     }
   }
 
@@ -201,7 +202,7 @@
 
 @media #{$desktop} {
   .price {
-    padding-bottom: 62px;
+    padding-bottom: 52px;
   }
 
   .price__wrapper {
