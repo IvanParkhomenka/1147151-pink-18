@@ -253,6 +253,7 @@
 @media #{$desktop} {
   .upload {
     @include container();
+    margin-bottom: 28px;
   }
 
   .upload__form {
