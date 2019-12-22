@@ -4,6 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Пинк: конкурс</title>
+    <link rel="preload" href="fonts/opensans.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -100,11 +106,11 @@
           <ul class="contest-form__list contest-form__list--fullname">
             <li class="contest-form__item contest-form__item--fullname">
               <label class="contest-form__label" for="surname">Фамилия:</label>
-              <input class="contest-form__field" id="surname" name="surname" type="text" placeholder="Укажите фамилию *" required="">
+              <input class="contest-form__field" id="surname" name="surname" type="text" placeholder="Укажите фамилию *" required>
             </li>
             <li class="contest-form__item contest-form__item--fullname">
               <label class="contest-form__label" for="name">Имя:</label>
-              <input class="contest-form__field" id="name" name="name" type="text" placeholder="Введите ваше имя *" required="">
+              <input class="contest-form__field" id="name" name="name" type="text" placeholder="Введите ваше имя *" required>
             </li>
             <li class="contest-form__item contest-form__item--fullname">
               <label class="contest-form__label" for="middle-name">Отчество:</label>
@@ -116,11 +122,11 @@
           <legend class="contest-form__legend">Ваши безбашенные достижения в путешествии</legend>
           <ul class="contest-form__list contest-form__list--progress">
             <li class="contest-form__item contest-form__item--checkbox contest-form__item--selfie">
-              <input class="contest-form__checkbox" id="selfie" name="selfie" type="checkbox" checked="">
+              <input class="contest-form__checkbox" id="selfie" name="selfie" type="checkbox" checked>
               <label class="contest-form__checkbox-label" for="selfie">Сделал селфи с акулой</label>
             </li>
             <li class="contest-form__item contest-form__item--checkbox">
-              <input class="contest-form__checkbox" id="burnt" name="burnt" type="checkbox" checked="">
+              <input class="contest-form__checkbox" id="burnt" name="burnt" type="checkbox" checked>
               <label class="contest-form__checkbox-label" for="burnt">Обгорел на пляже</label>
             </li>
             <li class="contest-form__item contest-form__item--checkbox contest-form__item--chuck">
@@ -132,7 +138,7 @@
               <label class="contest-form__checkbox-label" for="gifts">Накупил сувениров</label>
             </li>
             <li class="contest-form__item contest-form__item--checkbox contest-form__item--tower">
-              <input class="contest-form__checkbox" id="tower" name="tower" type="checkbox" checked="">
+              <input class="contest-form__checkbox" id="tower" name="tower" type="checkbox" checked>
               <label class="contest-form__checkbox-label" for="tower">Удержал башню</label>
             </li>
             <li class="contest-form__item contest-form__item--checkbox">
@@ -147,13 +153,13 @@
             <li class="contest-form__item contest-form__item--contacts">
               <label class="contest-form__label" for="tel">Номер телефона</label>
               <div class="contest-form__input-wrapper contest-form__input-wrapper--tel">
-                <input class="contest-form__field" id="tel" name="tel" type="tel" placeholder="Номер, пожалуйста">
+                <input class="contest-form__field" id="tel" name="tel" type="tel" placeholder="Номер, пожалуйста" pattern="+7\[0-9]{3}\[0-9]{3}[0-9]{2}[0-9]{2}">
               </div>
             </li>
             <li class="contest-form__item contest-form__item--contacts">
               <label class="contest-form__label" for="email">Адрес почты</label>
               <div class="contest-form__input-wrapper contest-form__input-wrapper--email">
-                <input class="contest-form__field" id="email" name="email" type="email" placeholder="Введите почту *" required="">
+                <input class="contest-form__field" id="email" name="email" type="email" placeholder="Введите почту *" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$">
               </div>
             </li>
           </ul>
@@ -162,7 +168,7 @@
           <legend class="contest-form__legend">С каким приложением путешествовали?</legend>
           <ul class="contest-form__list contest-form__list--app">
             <li class="contest-form__item contest-form__item--radio">
-              <input class="contest-form__radio" type="radio" id="ios" name="system" value="ios" checked="">
+              <input class="contest-form__radio" type="radio" id="ios" name="system" value="ios" checked>
               <label class="contest-form__radio-label" for="ios">Pink для iOS</label>
             </li>
             <li class="contest-form__item contest-form__item--radio">
