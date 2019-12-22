@@ -140,6 +140,7 @@
   line-height: 30px;
   color: #283645;
   letter-spacing: 0.35px;
+  cursor: pointer;
 }
 
 .contest-form__checkbox + .contest-form__checkbox-label {
@@ -180,6 +181,7 @@
   line-height: 30px;
   color: #283645;
   letter-spacing: 0.3px;
+  cursor: pointer;
 }
 
 .contest-form__radio {
@@ -270,6 +272,7 @@
   color: #ffffff;
   border: none;
   background-color: #2aab6d;
+  cursor: pointer;
 
   &:hover {
     background-color: #1c9b5e;
