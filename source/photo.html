@@ -4,10 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Пинк: Фотографии</title>
+    <link rel="preload" href="fonts/opensans.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-
+    <!-- спрайт собран вручную, поэтому работают свойство CurrentColor и :hover, :active, :focus -->
     <svg style="display: none">
       <symbol viewBox="0 0 146.3 40.375" id="logo-desktop">
         <g>
@@ -68,14 +74,16 @@
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <div class="main-nav__wrapper">
           <div class="main-nav__logo">
-            <img class="main-nav__logo-svg--desktop" src="img/logo-pink-white-desktop.svg" alt="Лого Pink" width="147" height="40">
-            <svg class="main-nav__logo-svg main-nav__logo-svg--mobile" width="74.426px" height="22.859px">
-              <use xlink:href="#logo-letters"></use>
-            </svg>
-            <svg class="main-nav__logo-svg main-nav__logo-svg--tablet" width="146.3px" height="40.375px">
-              <use xlink:href="#logo-glasses" width="60.51px" height="40.375px"></use>
-              <use xlink:href="#logo-letters" width="74.426px" height="22.859px" x="72" y="17.4"></use>
-            </svg>
+            <a class="main-nav__logo-link" href="index.html">
+              <img class="main-nav__logo-svg--desktop" src="img/logo-pink-white-desktop.svg" alt="Лого Pink" width="147" height="40">
+              <svg class="main-nav__logo-svg main-nav__logo-svg--mobile" width="74.426px" height="22.859px">
+                <use xlink:href="#logo-letters"></use>
+              </svg>
+              <svg class="main-nav__logo-svg main-nav__logo-svg--tablet" width="146.3px" height="40.375px">
+                <use xlink:href="#logo-glasses" width="60.51px" height="40.375px"></use>
+                <use xlink:href="#logo-letters" width="74.426px" height="22.859px" x="72" y="17.4"></use>
+              </svg>
+            </a>
           </div>
           <button class="main-nav__toggle">
             <svg class="main-nav__toggle-opened" width="23.867px" height="23.867px">
@@ -395,6 +403,6 @@
       </section>
     </footer>
     <script src="js/picturefill.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
